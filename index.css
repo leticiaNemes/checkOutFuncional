@@ -1,0 +1,15 @@
+body{
+    background-color: aquamarine;
+}
+#card{
+    width: 70%;
+    background-color: bisque;
+    margin: 0 auto;
+}
+#input{
+    display: flex;
+    flex-direction: column;
+}
+#botoes{
+    text-align: center;
+}
