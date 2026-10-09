@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +7,36 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="card">
-
+   <div id="card">
     <div>
-        <h1>checkOut de compras</h1>
-
+        <h1>CheckOut de Compras</h1>
     </div>
     <div id="inputs">
-        <label for=""> preço do produto (R$)</label>
-        <input type="text" placeholder= "Ex:100,00">
-        <label for="">valor do frete (R$)</label>
-        <input type="text" placeholder=""Ex:15,00>
+        <label for="">Preço do Produto (R$)</label>
+        <input type="text" placeholder="Ex:100,00" id="preco">
+        <label for="">Valor do Frete (R$)</label>
+        <input type="text" placeholder="Ex:15,00" id="frete">
     </div>
     <div>
-    <h3>forma de pagamento</h3>
-</div>
+        <h3>Forma de Pagamento:</h3>
+    </div>
     <div id="botoes">
        
-    </div>
-    <div id="botao1">
-    <input type="submit" value="PIX(-10%)" id="b1">
-    <input type="submit" value="dinheiro(-5%)" id="b2">
-    </div>
-    <div id="botao2">
-        <input type="submit" value="cartão a vista" id="b3">
-        <input type="submit" value="parcelado(+5%)" id="b4">
+        <div  id="botao1">
+            <input type="submit" value="PIX(-10%)" id="b1" onclick=pagarComPix()>
+            <input type="submit" value="Dinheiro(-5%)" id="b2" onclick=pagarComDinheiro()>
         </div>
-        <div>
-            <p>forma:</p>
-            <p>total:</p>
+        <div id="botao2">
+            <input type="submit" value="Cartão à Vista" id="b3" onclick=pagarComCartao()>
+            <input type="submit" value="Parcelado(+5%)" id="b4" onclick=pagarParcelado()>
         </div>
-</div>
-    
+    </div>
+    <div>
+        <p id="forma">Forma:</p>
+        <p id="resultado">Total:</p>
+    </div>
+   
+   </div>
+   <script src="index.js"></script>
 </body>
 </html>
